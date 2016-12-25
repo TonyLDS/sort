@@ -26,7 +26,7 @@ def insert_sort(nums):
     nums_len = len(nums)
     for i in range(nums_len):
         if i == 0:
-            continue
+            pass
         else:
             for x in range(i):
                 if nums[x] > nums[i]:
