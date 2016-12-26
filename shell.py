@@ -40,7 +40,10 @@ def shell_sort(nums):
                         else:
                             break
                 m += gap
-        gap //= rf
+        if (gap // rf == 0 and gap != 1):
+            gap = 1
+        else:
+            gap //= rf
                     
 
 if __name__ == '__main__':
